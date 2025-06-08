@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(70, 69, 69);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: default;
+    
+}
+
+h1, h2 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    img {
+        width: 90%;
+    }
+
+    #tatuagens1, #fotos2 {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+#tatuagens1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#fotoinsta img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: zoom-out;
+}
+
+#modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}#fotos2{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+} #endereço{
+    color: red;
+    
+} img:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
